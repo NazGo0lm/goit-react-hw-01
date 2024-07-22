@@ -1,17 +1,17 @@
 //import React from 'react'
-import styles from "./Profile.module.css"
+import profileStyles from "./Profile.module.css"
 //import clsx from "clsx";
 
-const Profile = ({username, tag, location, avatar ,stats}) => {
+const Profile = ({username, tag, location, image ,stats}) => {
   return (
-<div>
- <div className={styles.profileContainer}>
+<div className={profileStyles.profileContainer}>
+ <div >
   <img
-   src={avatar}
+   src={image}
    alt="User avatar"
   />
   <p>{username}</p>
-  <p>{tag}</p>
+  <p>@{tag}</p>
   <p>{location}</p>
  </div>
 
